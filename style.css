@@ -37,6 +37,7 @@ h1 {
     justify-self: center;
     grid-area: h1;
     font-size: 6.375rem;
+    color: #222222;
 }
 
 .ninjaHead {
@@ -85,6 +86,14 @@ button {
     font-weight: 700;
     color: white;
     margin-top: auto;
+}
+
+button:hover {
+    background-color: #f34e66;
+}
+
+button:active {
+    transform: scale(.95);
 }
 
 .astronaut {
@@ -150,7 +159,7 @@ button {
 }
 
 .bigCardCaption {
-    color: black;
+    color: #222222;
     padding: 1rem;
 }
 
@@ -182,9 +191,9 @@ footer {
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 3rem 1fr 1fr;
     grid-template-areas:
-        ". . . . . . . ."
-        ".  nav nav address address socials socials  ."
-        ". . . . . . . .";
+        " . . . . . . . ."
+        ". nav . address . socials . ."
+        " . . . . . . . .";
 }
 
 ul {
@@ -193,7 +202,7 @@ ul {
 
 .footerNav {
     grid-area: nav;
-    justify-self: start;
+    justify-self: center;
     line-height: 1.5rem;
 }
 
@@ -213,6 +222,7 @@ ul {
     font-size: 2.125rem;
     font-weight: 700;
     margin-bottom: 1rem;
+    width: 12.5rem;
 
 }
 
@@ -222,7 +232,7 @@ ul {
 }
 
 #socialWrapper {
-    width: 12.5rem;
+    width: 11.2rem;
     display: flex;
     justify-content: space-between;
 }
