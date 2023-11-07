@@ -58,22 +58,34 @@ main {
         ". clown polis fe .";
 }
 
+figure {
+    margin: 3rem 0;
+}
+
 figcaption {
     color: white;
-    height: 14rem;
+    height: 15rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
 button {
     background-color: #E83F57;
     font-size: 0.75rem;
-    padding: .5rem;
-    width: 10rem;
+    padding: .6rem;
+    width: 9rem;
     border: none;
     border-radius: 4px;
+    font-weight: 700;
     color: white;
+    margin-top: auto;
 }
 
 
@@ -115,7 +127,7 @@ button {
 }
 
 .smallCardImg {
-    max-width: 20vw;
+    max-width: 21vw;
 }
 
 .bigCardImg {
@@ -171,7 +183,7 @@ button {
 footer {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 3rem 1fr 1fr;
     grid-template-areas:
         ". . . . . . . ."
         ".  nav nav address address socials socials  ."
@@ -185,12 +197,27 @@ ul {
 
 .footerNav {
     grid-area: nav;
+    justify-self: start;
+    line-height: 1.5rem;
+}
+
+.footerH2 {
+    margin-bottom: 1rem;
 }
 
 .footerAddress {
     justify-self: center;
+    align-self: center;
     grid-area: address;
     width: 10rem;
+    line-height: 1.5rem;
+}
+
+.footerH3 {
+    font-size: 2.125rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+
 }
 
 .footerSocials {
@@ -199,7 +226,7 @@ ul {
 }
 
 #socialWrapper {
-    width: 10rem;
+    width: 12.5rem;
     display: flex;
     justify-content: space-between;
 }
