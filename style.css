@@ -40,6 +40,27 @@ header {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "burger . . . ."
+        ". h1 h1 h1 ."
+        ". . ninjaHead ninjaHead ."
+
+    ;
+}
+
+.burger {
+    padding: 2rem;
+    grid-area: burger;
+}
+
+h1 {
+    justify-self: center;
+    grid-area: h1;
+    font-size: 6.375rem;
+}
+
+.ninjaHead {
+    grid-area: ninjaHead;
 }
 
 main {
