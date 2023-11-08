@@ -20,7 +20,7 @@ body {
 
 header {
     display: grid;
-    grid-template-columns: 50px 1fr 50px;
+    grid-template-columns: 5rem 1fr 5rem;
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas:
         "burger . ."
