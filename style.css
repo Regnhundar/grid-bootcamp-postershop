@@ -45,6 +45,7 @@ h1 {
     grid-area: ninjaHead;
     align-self: end;
     justify-self: center;
+    margin-top: 2.5rem;
 }
 
 main {
@@ -134,12 +135,11 @@ button:active {
 }
 
 .smallCardImg {
-    max-width: 21vw;
+    /* max-width: 21vw; */
+    max-width: 20rem;
 }
 
-.bigCardImg {
-    width: 32vw;
-}
+
 
 .headerGrid {
     grid-area: header;
@@ -154,9 +154,14 @@ button:active {
 .bigCardGrid {
     grid-area: bigCard;
     display: grid;
-    gap: 2rem;
+    gap: 4rem;
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas: ". fotograf fotograf tränare tränare .";
+}
+
+.bigCardImg {
+    /* width: 32vw; */
+    max-width: 30rem;
 }
 
 .bigCardCaption {
@@ -167,13 +172,13 @@ button:active {
 .fotograf {
     background-color: white;
     grid-area: fotograf;
-    width: 32vw;
+    width: 30rem;
 }
 
 .tränare {
     background-color: white;
     grid-area: tränare;
-    width: 32vw;
+    width: 30rem;
 }
 
 .storKnapp {
